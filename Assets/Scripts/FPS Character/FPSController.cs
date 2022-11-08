@@ -43,6 +43,9 @@ public class FPSController : MonoBehaviour
         is_Moving = false;
 
         rayDistance = charController.height * 0.5f + charController.radius;
+        default_ControllerHeight = charController.height;
+        default_CamPos = firstPerson_View.localPosition;
+
     }
 
    
@@ -98,9 +101,16 @@ public class FPSController : MonoBehaviour
 
         if (is_Grounded)
         {
+            //HERE WE GONNA CALL CROUNCH AND SPRINT
+
+            PlayerCrounchingAndSprinting();
+
             moveDirection = new Vector3(inputX * inputModifyFactor, -antiBumpFactor,
                 inputY * inputModifyFactor);
             moveDirection = transform.TransformDirection(moveDirection) * speed;
+
+            //HERE WE ARE GONNA CALL JUMP
+            PlayerJump();
         }
         moveDirection.y -= gravity * Time.deltaTime;
 
@@ -108,4 +118,96 @@ public class FPSController : MonoBehaviour
 
         is_Moving = charController.velocity.magnitude > 0.15f;
     }
+
+    void PlayerCrounchingAndSprinting()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (!is_Crouching)
+            {
+                is_Crouching = true;
+            }
+            else
+            {
+                if (canGetUp())
+                {
+                    is_Crouching = false;
+                }
+            }
+
+            StopCoroutine(MoveCameraAndCrouch());
+            StartCoroutine(MoveCameraAndCrouch());
+        }
+
+        if (is_Crouching)
+        {
+            speed = crouchSpeed;
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                speed = runSpeed;
+            }
+            else
+            {
+                speed = walkSpeed;
+            }
+        }
+    }
+    bool canGetUp()
+    {
+        Ray groundRay = new Ray(transform.position, transform.up);
+        RaycastHit groundHit;
+
+        if (Physics.SphereCast(groundRay, charController.radius + 0.05f,
+            out groundHit, rayDistance, groundLayer))
+        {
+            if (Vector3.Distance(transform.position, groundHit.point) < 2.3f)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    IEnumerator MoveCameraAndCrouch()
+    {
+        charController.height = is_Crouching ? default_ControllerHeight / 1.5f : default_ControllerHeight;
+        charController.center = new Vector3(0f, charController.height / 2f, 0f);
+
+        camHeight = is_Crouching ? default_CamPos.y / 1.5f : default_CamPos.y;
+
+        while (Mathf.Abs(camHeight - firstPerson_View.localPosition.y) > 0.01f)
+        {
+
+            firstPerson_View.localPosition = Vector3.Lerp(firstPerson_View.localPosition,
+                new Vector3(default_CamPos.x, camHeight, default_CamPos.z),
+                Time.deltaTime * 11f);
+
+            yield return null;
+        }
+    }
+
+    void PlayerJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (is_Crouching)
+            {
+                if (canGetUp())
+                {
+                    is_Crouching = false;
+                    StopCoroutine(MoveCameraAndCrouch());
+                    StartCoroutine(MoveCameraAndCrouch());
+                }
+            }
+            else
+            {
+                moveDirection.y = jumpSpeed;
+            }
+        }
+    }
+
 }
