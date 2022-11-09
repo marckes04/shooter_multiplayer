@@ -353,6 +353,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/FPS Character/FPSController.cs"
 "Assets/Scripts/FPS Character/FPSMouseLook.cs"
+"Assets/Scripts/FPS Character/FPSPlayerAnimations.cs"
 -langversion:9.0
 
 /deterministic

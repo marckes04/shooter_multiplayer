@@ -35,6 +35,8 @@ public class FPSController : MonoBehaviour
     private Vector3 default_CamPos;
     private float camHeight;
 
+    private FPSPlayerAnimations playerAnimation;
+
     void Start()
     {
         firstPerson_View = transform.Find("FPS View").transform;
@@ -45,6 +47,8 @@ public class FPSController : MonoBehaviour
         rayDistance = charController.height * 0.5f + charController.radius;
         default_ControllerHeight = charController.height;
         default_CamPos = firstPerson_View.localPosition;
+
+        playerAnimation = GetComponent<FPSPlayerAnimations>();
 
     }
 
@@ -117,6 +121,8 @@ public class FPSController : MonoBehaviour
         is_Grounded = (charController.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) !=0;
 
         is_Moving = charController.velocity.magnitude > 0.15f;
+
+        HandleAnimations();
     }
 
     void PlayerCrounchingAndSprinting()
@@ -154,6 +160,8 @@ public class FPSController : MonoBehaviour
                 speed = walkSpeed;
             }
         }
+
+        playerAnimation.PlayerCrouch(is_Crouching); 
     }
     bool canGetUp()
     {
@@ -199,6 +207,7 @@ public class FPSController : MonoBehaviour
                 if (canGetUp())
                 {
                     is_Crouching = false;
+                    playerAnimation.PlayerCrouch(is_Crouching);
                     StopCoroutine(MoveCameraAndCrouch());
                     StartCoroutine(MoveCameraAndCrouch());
                 }
@@ -210,4 +219,14 @@ public class FPSController : MonoBehaviour
         }
     }
 
+    void HandleAnimations()
+    {
+        playerAnimation.Movement(charController.velocity.magnitude);
+        playerAnimation.PlayerJump(charController.velocity.y);
+
+        if(is_Crouching && charController.velocity.magnitude > 0f)
+        {
+            playerAnimation.PlayerCrouchWalk(charController.velocity.magnitude);
+        }
+    }
 }

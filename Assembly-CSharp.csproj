@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\FPS Character\FPSMouseLook.cs" />
     <Compile Include="Assets\Scripts\FPS Character\FPSController.cs" />
+    <Compile Include="Assets\Scripts\FPS Character\FPSPlayerAnimations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Toon Shaders\Sources\Shaders\Toony-LightedOutline.shader" />
