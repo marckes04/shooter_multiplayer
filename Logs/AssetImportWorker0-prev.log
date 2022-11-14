@@ -15,7 +15,7 @@ C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/MultiplayerShooter3D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55742
+53449
 Successfully changed project path to: C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/MultiplayerShooter3D
 C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/MultiplayerShooter3D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/MultiplayerShooter3D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 98.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,182 +63,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010989 seconds.
+Registered in 0.713094 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 81.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 85.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.694 seconds
+- Completed reload, in 15.659 seconds
 Domain Reload Profiling:
-	ReloadAssembly (695ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (15659ms)
+		BeginReloadAssembly (10544ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (480ms)
-			LoadAssemblies (78ms)
+		EndReloadAssembly (3886ms)
+			LoadAssemblies (10674ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (112ms)
+			SetupTypeCache (3164ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (279ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (506ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (56ms)
+				InitializePlatformSupportModulesInManaged (231ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (81ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (98ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (84ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007184 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\MultiplayerShooter3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\MultiplayerShooter3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.484 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1485ms)
-		BeginReloadAssembly (270ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (161ms)
-		EndReloadAssembly (1097ms)
-			LoadAssemblies (217ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (467ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3374 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (401.2 KB). Loaded Objects now: 3833.
-Memory consumption went from 119.8 MB to 119.4 MB.
-Total: 4.357100 ms (FindLiveObjects: 0.285800 ms CreateObjectMapping: 0.188800 ms MarkObjects: 3.587300 ms  DeleteObjects: 0.294000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 4925.282415 seconds.
-  path: Assets/Models/Maps
-  artifactKey: Guid(31ac20343ef51a74f8ac7db6c49dabed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Maps using Guid(31ac20343ef51a74f8ac7db6c49dabed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e6deea8506b80a4cfeb6996801e095') in 0.317427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.128194 seconds.
-  path: Assets/Models/FPS Character/Animations
-  artifactKey: Guid(037d4fad0b81f43f6bc6a1e7b3b1b930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animations using Guid(037d4fad0b81f43f6bc6a1e7b3b1b930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0223132e8bddbb1a92a8b0fd2a6fd23') in 0.062128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.066808 seconds.
-  path: Assets/Models/FPS Character/Animator Controllerers/Old Controllers
-  artifactKey: Guid(43660c60cd1ccd94a8084ed26f436f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animator Controllerers/Old Controllers using Guid(43660c60cd1ccd94a8084ed26f436f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91e3ab722d40bc2c218ebe13ba251e2') in 0.009963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.397005 seconds.
-  path: Assets/Models/FPS Character/Animator Controllerers/FPS Character Pistol.controller
-  artifactKey: Guid(65a3ef3b2d7114ff9845c653037c7b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animator Controllerers/FPS Character Pistol.controller using Guid(65a3ef3b2d7114ff9845c653037c7b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89c2e1fd66437654165c500c0237336') in 0.041010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.363343 seconds.
-  path: Assets/Models/FPS Character/Animator Controllerers/FPS Character Machine Gun.controller
-  artifactKey: Guid(0770a54f266a24bc7b5bd0ee2d2b4f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animator Controllerers/FPS Character Machine Gun.controller using Guid(0770a54f266a24bc7b5bd0ee2d2b4f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d224a3d178df881949b7337082a48f6') in 0.027060 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.811056 seconds.
-  path: Assets/Models/FPS Character/Animator Controllerers/New Folder
-  artifactKey: Guid(ca5626070159caf40af277d1fdd2e747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animator Controllerers/New Folder using Guid(ca5626070159caf40af277d1fdd2e747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b2ea56e7f0265abda8f6ce03df721f') in 0.006827 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.653156 seconds.
-  path: Assets/Models/FPS Character/Animator Controllerers/FPS Controller.controller
-  artifactKey: Guid(96a43b77be73d82488c48ce501cfe3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animator Controllerers/FPS Controller.controller using Guid(96a43b77be73d82488c48ce501cfe3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f801c7e2941c85edbf669672c64f473') in 0.009134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1702.578465 seconds.
-  path: Assets/Models/FPS Character/Animations/Walking/Walk_Forward_Aimed_SH.fbx
-  artifactKey: Guid(460f6ec3b5f714a9a8c1e2de53eb6ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animations/Walking/Walk_Forward_Aimed_SH.fbx using Guid(460f6ec3b5f714a9a8c1e2de53eb6ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d08cec37fd962035f95d14163df09f4') in 0.896687 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.167595 seconds.
-  path: Assets/Models/FPS Character/Animations/Idle/Standing_Idle_SH.fbx
-  artifactKey: Guid(a33589781f3df43a8bd01370a7cf748a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animations/Idle/Standing_Idle_SH.fbx using Guid(a33589781f3df43a8bd01370a7cf748a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48682410fa1487391c331caa7ed3a2ff') in 0.047903 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 57.823332 seconds.
-  path: Assets/Models/FPS Character/Animations/Running/Run_Forward_Aimed_SH.fbx
-  artifactKey: Guid(2b1d7f717df84445691574383a63a786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animations/Running/Run_Forward_Aimed_SH.fbx using Guid(2b1d7f717df84445691574383a63a786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd835c740f0df47ccaafe7dcdf881d4bc') in 0.102895 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 72.649655 seconds.
-  path: Assets/Models/FPS Character/Animations/Jump/Jump_Start_SH.fbx
-  artifactKey: Guid(fa60b6817f6044f3b9bf45546983ce80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animations/Jump/Jump_Start_SH.fbx using Guid(fa60b6817f6044f3b9bf45546983ce80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17472c40d6b41362daaf13935275c86e') in 0.111280 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 491.940060 seconds.
-  path: Assets/Models/FPS Character/Animations/Running/Run_Forward_SH.fbx
-  artifactKey: Guid(dd03a19520bb14dddb3093033edb79f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animations/Running/Run_Forward_SH.fbx using Guid(dd03a19520bb14dddb3093033edb79f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d656fe358453e08ec713bcd89c67853') in 0.094328 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.396312 seconds.
-  path: Assets/Models/FPS Character/Animations/Walking/Walk_Forward_SH.fbx
-  artifactKey: Guid(4e0bcec2a8cb94bc29875ccedb593507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FPS Character/Animations/Walking/Walk_Forward_SH.fbx using Guid(4e0bcec2a8cb94bc29875ccedb593507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5108b6010579091cd7d0713bf9c80c86') in 0.061376 seconds 
+Registered in 0.007486 seconds.

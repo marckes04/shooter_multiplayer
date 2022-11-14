@@ -354,6 +354,8 @@
 "Assets/Scripts/FPS Character/FPSController.cs"
 "Assets/Scripts/FPS Character/FPSMouseLook.cs"
 "Assets/Scripts/FPS Character/FPSPlayerAnimations.cs"
+"Assets/Scripts/Weapons/FPSWeapon.cs"
+"Assets/Scripts/Weapons/WeaponManager.cs"
 -langversion:9.0
 
 /deterministic

@@ -11,6 +11,13 @@ public class FPSPlayerAnimations : MonoBehaviour
     private string CROUCH = "Crouch";
     private string CROUCH_WALK = "CrouchWalk";
 
+    private string STAND_SHOOT = "StandShoot";
+    private string CROUCH_SHOOT = "CrouchShoot";
+    private string RELOAD = "Reload";
+
+    public RuntimeAnimatorController animController_Pistol, animatorController_MachineGun;
+
+
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -36,4 +43,31 @@ public class FPSPlayerAnimations : MonoBehaviour
         anim.SetFloat(CROUCH_WALK, magnitude);
     }
 
+    public void Shoot(bool isStanding)
+    {
+        if (isStanding)
+        {
+            anim.SetTrigger(STAND_SHOOT);
+        }
+        else
+        {
+            anim.SetTrigger(CROUCH_SHOOT);
+        }
+    }
+    public void ReloadGun()
+    {
+        anim.SetTrigger(RELOAD);
+    }
+
+    public void ChangeController(bool isPistol)
+    {
+        if (isPistol)
+        {
+            anim.runtimeAnimatorController = animController_Pistol;
+        }
+        else
+        {
+            anim.runtimeAnimatorController=animatorController_MachineGun;
+        }
+    }
 }

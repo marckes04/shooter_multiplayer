@@ -321,21 +321,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 208350370368616687, guid: 95019adabaa87a9479e384ed1365bc3c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 208350370384755030, guid: 95019adabaa87a9479e384ed1365bc3c, type: 3}
-      propertyPath: m_Center.y
-      value: 1.01
-      objectReference: {fileID: 0}
     - target: {fileID: 208350370384789493, guid: 95019adabaa87a9479e384ed1365bc3c, type: 3}
       propertyPath: m_Name
       value: FPS Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 208350370384880595, guid: 95019adabaa87a9479e384ed1365bc3c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.341
       objectReference: {fileID: 0}
     - target: {fileID: 208350370384880597, guid: 95019adabaa87a9479e384ed1365bc3c, type: 3}
       propertyPath: m_RootOrder
