@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\FPS Character\FPSMouseLook.cs" />
     <Compile Include="Assets\Scripts\FPS Character\FPSPlayerAnimations.cs" />
+    <Compile Include="Assets\Scripts\Weapons\FPSHandsWeapon.cs" />
     <Compile Include="Assets\Scripts\FPS Character\FPSController.cs" />
     <Compile Include="Assets\Scripts\Weapons\FPSWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponManager.cs" />
